@@ -315,7 +315,13 @@ button:active {
 }
 
 .rainbow-text {
-    font-family: 'Comic Sans MS', cursive !important;
+    font-family: 
+  'Comic Sans MS',
+  'Comic Sans',
+  'Quicksand',
+  'Arial Rounded MT Bold',
+  'Courier New',
+  cursive !important;
     font-size: 2.5em !important;
     background: linear-gradient(90deg, 
         #ff0000, #ff7f00, #ffff00, #00ff00, 
@@ -333,7 +339,13 @@ button:active {
 }
 
 .bouncing-text {
-    font-family: 'Comic Sans MS', cursive !important;
+    font-family: 
+  'Comic Sans MS',
+  'Comic Sans',
+  'Quicksand',
+  'Arial Rounded MT Bold',
+  'Courier New',
+  cursive !important;
     color: #0000ff !important;
     font-size: 2.2em !important;
     animation: bounce 0.5s infinite;
@@ -670,3 +682,33 @@ button:active {
     50% { transform: scale(1.05); }
 }
 
+@media (max-width: 768px) {
+  body {
+    overflow-y: auto;
+  }
+
+  .slide {
+    max-height: 90vh;
+    overflow-y: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .cards-slide {
+    max-height: 90vh;
+    overflow-y: auto;
+    padding-bottom: 120px; /* space for NEXT button */
+  }
+
+  .cards-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .slide button {
+    position: sticky;
+    bottom: 20px;
+    z-index: 10;
+  }
+}
