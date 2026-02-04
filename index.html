@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Surprise for You 💕</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- SLIDE 1: Intro -->
+    <section id="slide1" class="slide">
+        <h1>Hi my sweet baby! 💕</h1>
+        <p>I have a surprise for you...</p>
+        <p>Do you want to see it?</p>
+        <div class="button-container">
+            <button onclick="startMusic(); nextSlide();">Yes!</button>
+            <button onclick="alert('Wrong option, try again :p')">No</button>
+        </div>
+    </section>
+
+    <!-- SLIDE 2: Photo collage -->
+    <section id="slide2" class="slide">
+        <h1>Us 💕</h1>
+        <div class="pixel-hearts-decoration">♥ ♥ ♥ ♥ ♥</div>
+        <img src="assets/images/ourcollage.png" alt="Our memories" class="collage-image">
+        <p>You make every moment magical ✨</p>
+        <button onclick="nextSlide()">Next ➜</button>
+    </section>
+
+    <!-- SLIDE 3: Guilt trip -->
+<section id="slide3" class="slide guilt-slide">
+    <h1>Just FYI... </h1>
+    <h2>I spent HOURS learning CSS for this</h2>
+    
+    <div class="search-history-box">
+        <p style="font-size: 1.1em; margin-bottom: 15px;">My search history is literally:</p>
+        <ul class="search-history">
+            <li>"how to make heart float in html"</li>
+            <li>"css position absolute vs relative"</li>
+            <li>"why is my div not centering"</li>
+            <li>"pixel font free download"</li>
+        </ul>
+    </div>
+    
+    <button onclick="nextSlide()">NEXT ➜</button>
+</section>
+
+    <!-- SLIDE 4: BRAINROT -->
+    <section id="slide4" class="slide brainrot-slide">
+        <h1 class="spinning-text">WHERE IS MY</h1>
+        <h1 class="rainbow-text">"I'M PROUD OF YOU"</h1>
+        <h1 class="bouncing-text">FOREHEAD KISSI??? :3 </h1>
+        <div class="meme-container">
+            <div class="spinning-emoji">🐱</div>
+            <div class="spinning-emoji">😭</div>
+            <div class="spinning-emoji">💔</div>
+        </div>
+        <button onclick="nextSlide()" class="brainrot-button">FINE ➜</button>
+    </section>
+
+    <!-- SLIDE 5: Love note -->
+    <section id="slide5" class="slide">
+        <h1>Okay but... </h1>
+        <p id="typewriter-text"></p>
+        <button onclick="nextSlide()">Next ➜</button>
+    </section>
+    
+     <!-- SLIDE 6: Sweet message cards (like his!) -->
+<section id="slide6" class="slide cards-slide">
+    <h1>Little reminders... 💕</h1>
+    
+    <div class="cards-grid">
+        <div class="message-card">
+            <p>Just a reminder that you are deeply loved, not for what you do, but for who you are.</p>
+        </div>
+        <div class="message-card">
+            <p>On days you doubt yourself, remember I believe in you more than you know.</p>
+        </div>
+        <div class="message-card">
+            <p>You do not have to be perfect to be everything to me.</p>
+        </div>
+        <div class="message-card">
+            <p>You're my Final Fantasy</p>
+        </div>
+        <div class="message-card">
+            <p>No matter where life takes us, you are home to me.</p>
+        </div>
+        <div class="message-card">
+            <p>Thank you for being you. </p>
+        </div>
+    </div>
+    
+    <button onclick="nextSlide()">So finally I have one question for you... ➜</button>
+</section>
+
+    <!-- SLIDE 7: THE QUESTION -->
+    <section id="slide7" class="slide">
+        <h1 id="scrambled-question">Will you be my Valentine?</h1>
+        <div class="button-container">
+            <button id="yesButton" onclick="sayYes()">YES! 💕</button>
+            <button id="noButton" onclick="sayNo()">No 💔</button>
+        </div>
+    </section>
+
+    <!-- SLIDE 8: SUCCESS -->
+    <section id="slide8" class="slide">
+        <h1>YAYYIEEE!! 🎉</h1>
+        <h2>mwehehehe i win 😈</h2>
+        <div class="pixel-cat">💖✨💕</div>
+        <button onclick="location.reload()">Play Again?</button>
+    </section>
+
+    <script src="script.js"></script>
+    
+<audio id="bgMusic" loop>
+    <source src="assets/music/themeoflove.mp3" type="audio/mpeg">
+</audio>
+</body>
+</html>
